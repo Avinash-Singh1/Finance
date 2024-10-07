@@ -4,6 +4,7 @@ import approutes from "./routes/app-routes.js";
 import bodyParser from "body-parser";
 import path from "path";
 import { configDotenv } from "dotenv";
+import cors from "cors";  // Optional if needed
 
 // Load environment variables
 configDotenv();
@@ -16,6 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.json());
+
+// Optional: Enable CORS if frontend is on a different origin
+// app.use(cors({ origin: 'https://your-frontend-url.com', credentials: true }));
 
 // Serve static files from the 'frontend' directory
 app.use(express.static(path.join(path.resolve(), "frontend/browser")));
@@ -33,9 +37,15 @@ app.get("/setcookie", (req, res) => {
     res.cookie("token", "iamcookie", {
         httpOnly: true,
         expires: new Date(Date.now() + 60 * 1000),
-        secure: false, // Set to true if your site is served over HTTPS
+        secure: process.env.NODE_ENV === 'production',  // Enable in production
     });
     res.status(200).json({ "status": "success avinash" });
+});
+
+// Error logging middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);  // Log error stack
+    res.status(500).json({ error: "Internal Server Error" });
 });
 
 // Start server
