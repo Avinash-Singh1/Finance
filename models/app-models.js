@@ -8,7 +8,7 @@ dotenv.config();
 export const jk_finance_db = new Sequelize(process.env.DATABASE,process.env.MYUSERNAME, process.env.PASSWORD, {
     host: process.env.HOST,
     port: process.env.DB_PORT,
-    dialect:process.env.dialect,
+    dialect:"mysql",
     pool: {
         max: 5,
         min: 0,
