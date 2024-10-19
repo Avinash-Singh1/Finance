@@ -1,10 +1,7 @@
 import { Sequelize } from "sequelize";
 import dotenv from "dotenv"; // Import dotenv
 dotenv.config(); 
-  
-// export const jk_finance_db = new Sequelize("society","root","avinash",{
-//     dialect:"mysql"
-// })
+
 export const jk_finance_db = new Sequelize(process.env.DATABASE,process.env.MYUSERNAME, process.env.PASSWORD, {
     host: process.env.HOST,
     port: process.env.DB_PORT,
@@ -18,7 +15,10 @@ export const jk_finance_db = new Sequelize(process.env.DATABASE,process.env.MYUS
     logging: false
   });
 
+
 export const jk_finance_User=jk_finance_db.define('register',{
+   
+   
     name:{
         type: Sequelize.DataTypes.STRING
     },

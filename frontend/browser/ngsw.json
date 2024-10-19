@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1728229110693,
+  "timestamp": 1729342164989,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -723,7 +723,7 @@
     "/assets/scss/material-dashboard/variables/_utilities.scss": "336914f857e0c62a7c90e40eab1490e2e65dc37a",
     "/assets/scss/material-dashboard/variables/_virtual-reality.scss": "f8f8f56a7dfbca43182f9653f5752b95c8b0cd15",
     "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/index.html": "73161f3bfea51e3a65b033a18a1ae3e8b112e548",
+    "/index.html": "ab703e1976f10ee57c5f7f862030188d39bdb04d",
     "/main-U4N35DJ3.js": "6069a42cc0e7ac4e77b68485102f4d59b43ba5c4",
     "/manifest.webmanifest": "c33bcf9baaa5178f01db399eb002cba7487cdee1",
     "/media/dxicons-COHMSREU.woff": "223dd66ac8c16f5743240565a9235ea83e601ce8",
