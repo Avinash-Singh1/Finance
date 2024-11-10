@@ -120,10 +120,10 @@ export const loginfun = async (req, res) => {
             // Store the token in session storage
             const token = generateToken(tokenObj);
             console.log("Token:",token);
-            res.cookie("token", token, {
-                httpOnly: true,
-                expires: new Date(Date.now() + 60 * 1000),
-              });
+            // res.cookie("token", token, {
+            //     httpOnly: true,
+            //     expires: new Date(Date.now() + 60 * 1000),
+            //   });
     
     res.status(200).json({ message: 'Login successful', token });
 

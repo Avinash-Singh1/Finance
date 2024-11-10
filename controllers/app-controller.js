@@ -191,9 +191,9 @@ export const loginfun = async (req, res) => {
     // Verify the password using stored hash
     const IsvalidUser = user.dataValues;
 
-    if (!IsvalidUser) {
-      return res.status(401).json({ error: "Authentication failed" });
-    }
+    // if (!IsvalidUser) {
+    //   return res.status(401).json({ error: "Authentication failed" });
+    // }
 
     // Verify the password using stored hash
     const result = await bcrypt.compare(password, user.password);
@@ -211,11 +211,11 @@ export const loginfun = async (req, res) => {
     console.log("Token: ", token);
 
     // Store the token in cookies
-    res.cookie("token", token, {
-      httpOnly: true,
-      expires: new Date(Date.now() + 60 * 1000),
-      // secure: true, // Uncomment this line for production if your site is served over HTTPS
-    });
+    // res.cookie("token", token, {
+    //   httpOnly: true,
+    //   expires: new Date(Date.now() + 60 * 1000),
+    // });
+    // secure: true, // Uncomment this line for production if your site is served over HTTPS
 
     res.status(200).json({
       message: "Login successful",

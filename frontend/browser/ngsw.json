@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1730365941351,
+  "timestamp": 1731252760584,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-KC3RBBYD.js",
+        "/main-ECVY65NI.js",
         "/manifest.webmanifest",
         "/polyfills-CG2UM2YX.js",
         "/styles-6DTFYEXO.css"
@@ -445,7 +445,7 @@
     "/assets/img/down-arrow-white.svg": "cfa911fafe1291c1dc197d8441bddf55db46318d",
     "/assets/img/down-arrow.svg": "a5953aa59199a65131b68b1897bc0eb80fa22a21",
     "/assets/img/drake.jpg": "9be4c99bf98dbe073aeff6d3728d86fb13b710de",
-    "/assets/img/favicon.png": "c96f23fbaee0f101103cd8193024fa879ebab41a",
+    "/assets/img/favicon.png": "59dc72caed5adf2785e19ebefc6a838d0c2a9a3c",
     "/assets/img/home-decor-1.jpg": "b351c0621cdd05100df40c48b26471d8e1573aaf",
     "/assets/img/home-decor-2.jpg": "7d59855fe5de8f0571751fe4a14d83c778a7bfb7",
     "/assets/img/home-decor-3.jpg": "cc625c9d26374d5fcbbace21b0a4369e03e2ee0d",
@@ -723,8 +723,8 @@
     "/assets/scss/material-dashboard/variables/_utilities.scss": "336914f857e0c62a7c90e40eab1490e2e65dc37a",
     "/assets/scss/material-dashboard/variables/_virtual-reality.scss": "f8f8f56a7dfbca43182f9653f5752b95c8b0cd15",
     "/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/index.html": "c189ba3ca91325a19bbb85cfb51ed3fdc72d21c3",
-    "/main-KC3RBBYD.js": "0dc3f7c7e3319edfaec364858c08f7a9655468b9",
+    "/index.html": "ce2477128f897eb05d8a15de732a76146d2d5339",
+    "/main-ECVY65NI.js": "38e046d0e2054b22c9e8e3802177112a1c772b51",
     "/manifest.webmanifest": "c33bcf9baaa5178f01db399eb002cba7487cdee1",
     "/media/dxicons-COHMSREU.woff": "223dd66ac8c16f5743240565a9235ea83e601ce8",
     "/media/dxicons-YDVXLDGA.ttf": "9d7c15630ebfc867a5ed9fd25ca03bbdf0f47d2c",
